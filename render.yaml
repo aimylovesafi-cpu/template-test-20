@@ -1,0 +1,11 @@
+services:
+ - type: web
+ name: template-test-20
+ env: node
+ buildCommand: npm install
+ startCommand: node server.js
+ envVars:
+ - key: BUILDER_PASSWORD
+ - key: GITHUB_TOKEN
+ - key: GITHUB_USERNAME
+ - key: GROQ_API_KEY
